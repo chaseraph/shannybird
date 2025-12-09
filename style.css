@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+#game-container {
+    width: 800px;
+    height: 600px;
+    background-color: #70c5ce; /* Light blue sky */
+    border: 5px solid #000;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#shannon {
+    position: absolute;
+    width: 100px;
+    height: 75px;
+    /* Use the provided URL for the image */
+    background-image: url('https://www.newsinthegrove.com/content/images/2025/12/1000038710.png');
+    background-size: cover;
+    background-position: center;
+    /* Adjust 'transform' to make her look like she's flying forward */
+    transform: rotate(0deg); 
+    z-index: 10;
+    /* Initial position will be set by JS */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    z-index: 100;
+}
+
+.pipe {
+    position: absolute;
+    width: 60px; /* Slightly wider pipes for an easier game */
+    background-color: #74BF2E; /* Green pipe color */
+    border: 3px solid #000;
+    box-sizing: border-box;
+}
+
+.top-pipe {
+    top: 0;
+}
+
+.bottom-pipe {
+    bottom: 0;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.hidden {
+    display: none;
+}
