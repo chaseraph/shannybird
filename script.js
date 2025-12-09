@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // *** NEW COLLISION BOX DEFINITIONS ***
     // These define the inner, non-transparent area of the sprite that will trigger a hit.
-    const COLLISION_WIDTH = 50; 
-    const COLLISION_HEIGHT = 60; 
+    const COLLISION_WIDTH = 25; 
+    const COLLISION_HEIGHT = 30; 
     // X offset to center the 50px collision box within the 100px visual sprite: (100 - 50) / 2 = 25px
     const COLLISION_OFFSET_X = 25; 
     // Y offset to move the collision box down, ignoring transparent space above the head: (75 - 60) = 15px
@@ -206,3 +206,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial start call
     startGame();
 });
+
